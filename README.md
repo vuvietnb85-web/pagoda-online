@@ -12,6 +12,7 @@
 - **Shrine (Chánh điện)**: virtual incense offering, temple bell and wooden fish (mõ) synthesised with Web Audio, with a strike counter.
 - **Meditation timer**: 5/10/20/30 minutes with opening and closing bells.
 - **Lunar calendar (Lịch âm)**: monthly grid with lunar dates, mùng 1 and rằm highlighted, optional reminders.
+- **Offering (Cúng dường)**: voluntary donation that unlocks nothing; every feature stays free. PayPal in USD (main link plus quick amounts 2/5/10/20) and MoMo (0988960419 / +84988960419, amount chips, transfer note, and a client-side QR of the phone number — not an official MoMo QR).
 - **PWA**: installable, works offline via a service worker.
 
 ## Run locally

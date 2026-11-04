@@ -3,7 +3,7 @@
 <meta name="description" content="Pagoda Online: offline-first Buddhist PWA with a sutra library (Pali + English, CC0), Vietnamese translations from SuttaCentral, meditation timer, bell and wooden fish, incense offering and lunar calendar.">
 <meta name="theme-color" content="#2a1a10"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><link rel="stylesheet" href="style.css"></head>
 <body><header><h1>☸ <span data-i="title">Chùa Online</span></h1><button id="lang">EN</button></header>
-<nav><button data-v="home" data-i="nHome">Chánh điện</button><button data-v="lib" data-i="nLib">Kinh tạng</button><button data-v="med" data-i="nMed">Thiền</button><button data-v="cal" data-i="nCal">Lịch âm</button></nav>
+<nav><button data-v="home" data-i="nHome">Chánh điện</button><button data-v="lib" data-i="nLib">Kinh tạng</button><button data-v="med" data-i="nMed">Thiền</button><button data-v="cal" data-i="nCal">Lịch âm</button><button data-v="give" data-i="nGive">Cúng dường</button></nav>
 <main>
 <section id="home" class="view">
  <div class="altar"><div class="buddha">☸</div><div class="incense" id="incense"></div></div>
@@ -31,6 +31,24 @@
  <div id="grid" class="grid"></div>
  <button id="notif" data-i="remind">Bật nhắc mùng 1 / rằm</button><p class="muted" id="nmsg"></p>
 </section>
+<section id="give" class="view" hidden>
+ <h2><span data-i="nGive">Cúng dường</span> <small class="bonus">BONUS</small></h2>
+ <p class="card muted" data-i="giveNote">Cúng dường là tự nguyện và không mở khóa tính năng nào. Mọi tính năng vẫn miễn phí.</p>
+ <div class="card">
+  <h3>PayPal</h3>
+  <div class="row"><a id="pp" class="btn" target="_blank" rel="noopener" href="https://www.paypal.com/donate/?cmd=_donations&amp;business=vuvietnb85%40gmail.com&amp;currency_code=USD&amp;item_name=PAGODA%20ONLINE" data-i="ppOpen">Ủng hộ qua PayPal</a></div>
+  <div class="row" id="ppAmt"></div>
+ </div>
+ <div class="card">
+  <h3>MoMo</h3>
+  <p class="row"><b class="num">0988960419</b> <span class="muted">(+84988960419)</span> <button id="cNum" type="button" data-i="copy">Chép</button></p>
+  <div class="row" id="vnd"><button type="button" data-a="20.000">20.000 đ</button><button type="button" data-a="50.000">50.000 đ</button><button type="button" data-a="100.000">100.000 đ</button><button type="button" data-a="200.000">200.000 đ</button></div>
+  <p class="muted" id="vndSel">Chưa chọn số tiền.</p>
+  <p class="row"><span data-i="noteLbl">Nội dung</span>: <b>PAGODA ONLINE</b> <button id="cNote" type="button" data-i="copy">Chép</button></p>
+  <div id="qr"></div>
+  <p class="muted" data-i="qrCap">Đây là mã QR của số điện thoại, không phải mã QR MoMo chính thức. Mở ứng dụng MoMo và chuyển khoản tới số này.</p>
+ </div>
+</section>
 </main>
-<footer class="muted">Texts: SuttaCentral (CC0). <a href="https://github.com/vuvietnb85-web/pagoda-online">GitHub</a> · No login, no tracking.</footer>
-<script src="lunar.js"></script><script src="app.js"></script></body></html>
+<footer class="muted">Texts: SuttaCentral (CC0). <a href="https://github.com/vuvietnb85-web/pagoda-online">GitHub</a> · <a href="#give" id="toGive" data-i="nGive">Cúng dường</a> · No login, no tracking.</footer>
+<script src="lunar.js"></script><script src="vendor/qrcode.js"></script><script src="app.js"></script></body></html>

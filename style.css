@@ -1,8 +1,12 @@
 :root{--bg:#1e130b;--wood:#3b2414;--gold:#d9a441;--txt:#f3e6cc;--fs:18px}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(#3b2414,#140c06) fixed;color:var(--txt);font-family:Georgia,"Noto Serif",serif}
+*{box-sizing:border-box}html{background:#140c06}body{margin:0;background:radial-gradient(#3b2414,#140c06) fixed;min-height:100vh;color:var(--txt);font-family:Georgia,"Noto Serif",serif}
 header{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:2px solid var(--gold)}h1{margin:0;font-size:1.3em;color:var(--gold)}
-nav{display:flex;position:sticky;top:0;background:var(--wood);z-index:2}nav button{flex:1;border-radius:0}
-button,select,input{background:linear-gradient(#5a3820,#3b2414);color:var(--gold);border:1px solid var(--gold);border-radius:8px;padding:10px 12px;font:inherit;cursor:pointer}
+nav{display:flex;flex-wrap:wrap;position:sticky;top:0;background:var(--wood);z-index:2}nav button{flex:1 0 18%;border-radius:0;white-space:nowrap;padding:10px 8px}
+button,select,input,a.btn{background:linear-gradient(#5a3820,#3b2414);color:var(--gold);border:1px solid var(--gold);border-radius:8px;padding:10px 12px;font:inherit;cursor:pointer;text-decoration:none}
+a.btn{display:inline-block}h2,h3{text-align:center;color:var(--gold);font-weight:normal;margin:.4em 0}h2{font-size:1.25em}h3{font-size:1.05em}
+.bonus{font-size:.55em;letter-spacing:.06em;border:1px solid var(--gold);border-radius:6px;padding:2px 6px;vertical-align:middle}
+.num{font-size:1.25em;color:var(--gold);letter-spacing:.03em}button.sel{background:var(--gold);color:#1e130b}
+#qr{display:flex;justify-content:center;margin:8px 0}#qr svg{width:200px;height:auto;max-width:80vw;border-radius:8px;border:1px solid var(--gold)}
 main{max-width:760px;margin:auto;padding:16px}.row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:10px 0;align-items:center}
 .muted{opacity:.75;text-align:center;font-size:.9em}.card{background:#0006;border:1px solid #d9a44155;border-radius:12px;padding:12px;margin:12px 0}
 .altar{height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center}.buddha{font-size:110px;color:var(--gold);text-shadow:0 0 30px #ffb84d}
