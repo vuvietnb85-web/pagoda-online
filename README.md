@@ -4,6 +4,8 @@
 
 **Live:** https://vuvietnb85-web.github.io/pagoda-online/
 
+![Shrine](docs/screenshot-home.png) ![Reader](docs/screenshot-reader.png) ![Calendar](docs/screenshot-calendar.png)
+
 ## Features
 - **Sutra library (Kinh tạng)**: 43 bundled suttas (Pāli + English, CC0), including DN 16, DN 22, DN 31, MN 10, MN 118, SN 56.11, Dhammapada chapters, Karaṇīya Mettā Sutta, Maṅgala Sutta and more. Full-text search.
 - **Reader**: font size, night mode, bookmarks, resume at last position, Pāli / English / both modes, and an optional Vietnamese mode (Thích Minh Châu) loaded live from SuttaCentral.
