@@ -1,0 +1,36 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pagoda Online · Chùa Online – Kinh Phật, Thiền, Lịch Âm</title>
+<meta name="description" content="Pagoda Online: offline-first Buddhist PWA with a sutra library (Pali + English, CC0), Vietnamese translations from SuttaCentral, meditation timer, bell and wooden fish, incense offering and lunar calendar.">
+<meta name="theme-color" content="#2a1a10"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><link rel="stylesheet" href="style.css"></head>
+<body><header><h1>☸ <span data-i="title">Chùa Online</span></h1><button id="lang">EN</button></header>
+<nav><button data-v="home" data-i="nHome">Chánh điện</button><button data-v="lib" data-i="nLib">Kinh tạng</button><button data-v="med" data-i="nMed">Thiền</button><button data-v="cal" data-i="nCal">Lịch âm</button></nav>
+<main>
+<section id="home" class="view">
+ <div class="altar"><div class="buddha">☸</div><div class="incense" id="incense"></div></div>
+ <p id="offerMsg" class="muted"></p>
+ <div class="row"><button id="offer" data-i="offer">Thắp hương</button><button id="bell" data-i="bell">Thỉnh chuông</button><button id="fish" data-i="fish">Gõ mõ</button></div>
+ <p class="muted"><span data-i="count">Số lần gõ mõ</span>: <b id="fishN">0</b></p>
+ <div id="today" class="card"></div>
+</section>
+<section id="lib" class="view" hidden>
+ <input id="q" type="search" data-ph="search" placeholder="Tìm kinh (tên, nội dung)…">
+ <div id="bm" class="muted"></div><ul id="list"></ul>
+</section>
+<section id="read" class="view" hidden>
+ <div class="row"><button id="back">←</button><button id="fm">A−</button><button id="fp">A+</button><button id="night">☾</button><button id="mark">★</button><select id="mode"><option value="both">Pāli + EN</option><option value="en">English</option><option value="pli">Pāli</option><option value="vi">Tiếng Việt (SuttaCentral)</option></select></div>
+ <article id="text"></article>
+</section>
+<section id="med" class="view" hidden>
+ <div class="timer" id="tdisp">10:00</div>
+ <div class="row"><button class="m" data-m="5">5'</button><button class="m" data-m="10">10'</button><button class="m" data-m="20">20'</button><button class="m" data-m="30">30'</button></div>
+ <div class="row"><button id="tstart" data-i="start">Bắt đầu</button><button id="tstop" data-i="stop">Dừng</button></div>
+ <p class="muted" data-i="medNote">Chuông báo lúc bắt đầu và kết thúc.</p>
+</section>
+<section id="cal" class="view" hidden>
+ <div class="row"><button id="pm">‹</button><b id="mlabel"></b><button id="nm">›</button></div>
+ <div id="grid" class="grid"></div>
+ <button id="notif" data-i="remind">Bật nhắc mùng 1 / rằm</button><p class="muted" id="nmsg"></p>
+</section>
+</main>
+<footer class="muted">Texts: SuttaCentral (CC0). <a href="https://github.com/vuvietnb85-web/pagoda-online">GitHub</a> · No login, no tracking.</footer>
+<script src="lunar.js"></script><script src="app.js"></script></body></html>

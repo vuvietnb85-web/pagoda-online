@@ -1,0 +1,15 @@
+:root{--bg:#1e130b;--wood:#3b2414;--gold:#d9a441;--txt:#f3e6cc;--fs:18px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(#3b2414,#140c06) fixed;color:var(--txt);font-family:Georgia,"Noto Serif",serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:2px solid var(--gold)}h1{margin:0;font-size:1.3em;color:var(--gold)}
+nav{display:flex;position:sticky;top:0;background:var(--wood);z-index:2}nav button{flex:1;border-radius:0}
+button,select,input{background:linear-gradient(#5a3820,#3b2414);color:var(--gold);border:1px solid var(--gold);border-radius:8px;padding:10px 12px;font:inherit;cursor:pointer}
+main{max-width:760px;margin:auto;padding:16px}.row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:10px 0;align-items:center}
+.muted{opacity:.75;text-align:center;font-size:.9em}.card{background:#0006;border:1px solid #d9a44155;border-radius:12px;padding:12px;margin:12px 0}
+.altar{height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center}.buddha{font-size:110px;color:var(--gold);text-shadow:0 0 30px #ffb84d}
+.incense{height:30px;position:relative}.incense.on::before{content:"";position:absolute;left:-2px;width:4px;height:30px;background:#a33;box-shadow:0 -4px 6px #f80}
+.incense.on::after{content:"";position:absolute;left:-6px;top:-40px;width:12px;height:40px;background:#fff3;filter:blur(6px);animation:sm 3s infinite}@keyframes sm{to{transform:translateY(-30px);opacity:0}}
+input{width:100%}ul{list-style:none;padding:0}li{padding:10px;border-bottom:1px solid #d9a44133;cursor:pointer}li small{display:block;opacity:.7}
+#text{font-size:var(--fs);line-height:1.7}#text .p{margin:.6em 0}#text .pl{color:#e8c27a;font-style:italic}
+body.night{background:#000}body.night #text{color:#bba}.timer{font-size:72px;text-align:center;color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.grid div{background:#0005;border-radius:6px;padding:4px;text-align:center;font-size:.85em}.grid .lu{font-size:.75em;opacity:.7}.grid .hl{border:1px solid var(--gold);color:var(--gold)}.grid .td{background:#d9a44144}
+footer{padding:16px}a{color:var(--gold)}
